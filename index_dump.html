@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="csrf-token" content="6diSKm20MgtVNZ0KM6TVd1WswdsbYglFsPxIIOOf">
+
+    <title>Abady | Professional Photographer &amp; Visual Storyteller</title>
+    
+    <!-- Meta tags for SEO -->
+    <meta name="description" content="Official portfolio of Abady. A showcase of professional photography, cinematic videos, client collaborations, and visual arts.">
+    <meta name="keywords" content="photography, portfolio, cinematographer, photographer, collaborations, gallery, albums">
+    <meta name="author" content="Abady">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Syne:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Tailwind / Vite CSS & JS -->
+    <link rel="preload" as="style" href="https://python-tray-wrench.ngrok-free.dev/build/assets/app-CMsBAUHZ.css" /><link rel="modulepreload" as="script" href="https://python-tray-wrench.ngrok-free.dev/build/assets/app-DMRtMKZ6.js" /><link rel="stylesheet" href="https://python-tray-wrench.ngrok-free.dev/build/assets/app-CMsBAUHZ.css" /><script type="module" src="https://python-tray-wrench.ngrok-free.dev/build/assets/app-DMRtMKZ6.js"></script>
+    <!-- Lucide Icons (CDN) -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+        .font-syne {
+            font-family: 'Syne', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-stone-50 text-stone-900 antialiased selection:bg-stone-900 selection:text-white overflow-x-hidden min-h-screen flex flex-col">
+
+    <!-- Floating Glassmorphic Header -->
+    <header class="sticky top-0 z-40 w-full bg-white/70 backdrop-blur-md border-b border-stone-200/50">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <!-- Logo -->
+            <a href="https://python-tray-wrench.ngrok-free.dev" class="font-syne text-2xl font-extrabold tracking-wider text-stone-950 uppercase flex items-center gap-2">
+                Abady<span class="text-amber-600">.</span>
+            </a>
+
+            <!-- Desktop Navigation -->
+            <nav class="hidden md:flex items-center gap-8">
+                <a href="https://python-tray-wrench.ngrok-free.dev" class="font-medium text-sm transition-colors text-amber-700 font-semibold">Home</a>
+                <a href="https://python-tray-wrench.ngrok-free.dev/albums" class="font-medium text-sm transition-colors text-stone-600 hover:text-stone-950">Albums</a>
+                <a href="https://python-tray-wrench.ngrok-free.dev/media" class="font-medium text-sm transition-colors text-stone-600 hover:text-stone-950">Media</a>
+                <a href="https://python-tray-wrench.ngrok-free.dev/collaborations" class="font-medium text-sm transition-colors text-stone-600 hover:text-stone-950">Collaborations</a>
+                <a href="https://python-tray-wrench.ngrok-free.dev/contact" class="font-medium text-sm transition-colors text-stone-600 hover:text-stone-950">Contact</a>
+                <a href="https://python-tray-wrench.ngrok-free.dev/book" class="font-medium text-sm transition-colors text-stone-600 hover:text-stone-950">Book Session</a>
+                <a href="https://python-tray-wrench.ngrok-free.dev/bookings/lookup" class="font-medium text-sm transition-colors text-stone-600 hover:text-stone-950">Manage Booking</a>
+            </nav>
+
+            <!-- Actions (Removed login/dashboard shortcuts for security) -->
+            <div class="hidden md:flex items-center gap-4">
+            </div>
+
+            <!-- Mobile Menu Toggle -->
+            <button id="mobile-menu-toggle" class="md:hidden text-stone-900 p-2 hover:bg-stone-100 transition-colors" aria-label="Toggle Menu">
+                <i data-lucide="menu" id="menu-icon" class="w-6 h-6"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Navigation Drawer -->
+    <div id="mobile-menu" class="fixed inset-0 top-20 z-30 bg-white/95 backdrop-blur-lg border-b border-stone-200/80 hidden flex-col px-8 py-10 gap-6 transition-all duration-300 ease-in-out md:hidden">
+        <a href="https://python-tray-wrench.ngrok-free.dev" class="font-syne text-2xl font-bold text-stone-900 hover:text-amber-700 transition-colors">Home</a>
+        <a href="https://python-tray-wrench.ngrok-free.dev/albums" class="font-syne text-2xl font-bold text-stone-900 hover:text-amber-700 transition-colors">Albums</a>
+        <a href="https://python-tray-wrench.ngrok-free.dev/media" class="font-syne text-2xl font-bold text-stone-900 hover:text-amber-700 transition-colors">Media</a>
+        <a href="https://python-tray-wrench.ngrok-free.dev/collaborations" class="font-syne text-2xl font-bold text-stone-900 hover:text-amber-700 transition-colors">Collaborations</a>
+        <a href="https://python-tray-wrench.ngrok-free.dev/contact" class="font-syne text-2xl font-bold text-stone-900 hover:text-amber-700 transition-colors">Contact</a>
+        <a href="https://python-tray-wrench.ngrok-free.dev/book" class="font-syne text-2xl font-bold text-stone-900 hover:text-amber-700 transition-colors">Book Session</a>
+        <a href="https://python-tray-wrench.ngrok-free.dev/bookings/lookup" class="font-syne text-2xl font-bold text-stone-900 hover:text-amber-700 transition-colors">Manage Booking</a>
+        <div class="h-px bg-stone-200 my-4"></div>
+        <!-- Admin Entrance shortcuts removed -->
+    </div>
+
+    <!-- Main Content Area -->
+    <main class="flex-grow">
+        <!-- Full-Screen Hero Section -->
+<section class="relative h-[90vh] flex items-center justify-center overflow-hidden bg-stone-100">
+    <div class="absolute inset-0 z-0">
+        <img src="https://python-tray-wrench.ngrok-free.dev/images/hero.png" alt="Abady Photography Hero" class="w-full h-full object-cover object-center filter grayscale opacity-90 scale-105 transition-transform duration-1000">
+        <!-- Light Gradient Overlay -->
+        <div class="absolute inset-0 bg-gradient-to-t from-stone-50 via-transparent to-black/10"></div>
+    </div>
+
+    <!-- Hero Content -->
+    <div class="relative z-10 text-center px-6 max-w-4xl mx-auto space-y-6">
+        <span class="text-xs font-bold uppercase tracking-[0.35em] text-stone-600 block">Fine-Art & Editorial Photography</span>
+        <h1 class="font-syne text-6xl md:text-8xl font-extrabold tracking-tight text-stone-950 uppercase leading-none drop-shadow-sm">
+            ABADY<span class="text-amber-600">.</span>
+        </h1>
+        <p class="text-stone-700 text-base md:text-lg max-w-xl mx-auto font-light leading-relaxed">
+            Capturing high-fashion, commercial campaigns, and raw human expressions through organic contrast and minimalist design.
+        </p>
+        <div class="pt-4">
+            <a href="https://python-tray-wrench.ngrok-free.dev/albums" class="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-white bg-stone-950 px-8 py-4 hover:bg-stone-850 hover:gap-3 transition-all rounded-sm shadow-sm">
+                View Portfolio <i data-lucide="arrow-right" class="w-4 h-4"></i>
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- Bio Section -->
+<section class="py-24 bg-white border-y border-stone-200/60">
+    <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
+                <!-- Bio Image -->
+        <div class="lg:col-span-5 relative group">
+            <div class="absolute -inset-2 bg-gradient-to-tr from-amber-600/10 to-transparent blur-lg opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
+            <div class="relative aspect-[4/5] bg-stone-50 overflow-hidden border border-stone-200 shadow-sm rounded-lg">
+                <img src="https://python-tray-wrench.ngrok-free.dev/storage/bio/SFZWdNtw7YOJRrO4EPbgjFGUZGpQ6L0ByncX0Ty0.jpg" alt="Abady Editorial Portrait" class="w-full h-full object-cover filter hover:scale-102 transition-transform duration-700">
+            </div>
+        </div>
+
+        <!-- Bio Content -->
+        <div class="lg:col-span-7 space-y-8">
+            <div class="space-y-3">
+                <span class="text-xs font-bold text-amber-705 uppercase tracking-widest block">The Artist Behind the Lens</span>
+                <h2 class="font-syne text-3xl md:text-4xl font-extrabold text-stone-900 leading-tight">
+                    Documenting authentic frames &amp; human identities.
+                </h2>
+            </div>
+            
+            <div class="text-stone-600 text-sm md:text-base leading-relaxed space-y-4 font-light whitespace-pre-line">
+                <p>
+                    I am Abady, a professional photographer and cinematographer based in Egypt, operating globally. My philosophy is rooted in minimal structures, organic lighting, and high-fashion aesthetics.
+                </p>
+                <p>
+                    With over a decade of capturing visual narratives, my work spans commercial editorial campaigns, minimalist street reportages, and cinematic storytelling. I collaborate with brands, designers, and curators who seek to convey organic depth and elevated aesthetics.
+                </p>
+            </div>
+
+            <!-- Connect & Action -->
+            <div class="pt-6 border-t border-stone-100 flex flex-wrap items-center justify-between gap-6">
+                <div class="flex items-center gap-6">
+                    <span class="text-xs font-bold text-stone-400 uppercase tracking-widest">Connect</span>
+                    <div class="flex items-center gap-4">
+                        <a href="https://www.instagram.com/abady_ph?igsh=MXZ1OXl1aGlzamFyOA%3D%3D&amp;utm_source=qr" target="_blank" class="text-stone-600 hover:text-amber-750 transition-colors p-2 hover:bg-stone-50 rounded-full flex items-center justify-center" aria-label="Instagram">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                            </svg>
+                        </a>
+                        <a href="#" target="_blank" class="text-stone-600 hover:text-amber-750 transition-colors p-2 hover:bg-stone-50 rounded-full flex items-center justify-center" aria-label="YouTube">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"></path>
+                                <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon>
+                            </svg>
+                        </a>
+                        <a href="#" target="_blank" class="text-stone-600 hover:text-amber-750 transition-colors p-2 hover:bg-stone-50 rounded-full flex items-center justify-center" aria-label="TikTok">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <a href="https://python-tray-wrench.ngrok-free.dev/contact" class="inline-flex items-center gap-1.5 text-xs font-bold text-stone-950 hover:text-amber-755 uppercase tracking-wider group">
+                    Start a Collaboration <i data-lucide="arrow-right" class="w-4 h-4 group-hover:translate-x-1 transition-transform"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Featured Gallery Section -->
+<section class="py-24 bg-stone-50">
+    <div class="max-w-7xl mx-auto px-6 space-y-12">
+        <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4">
+            <div class="space-y-2">
+                <span class="text-xs font-bold text-amber-705 uppercase tracking-widest block">Featured Work</span>
+                <h2 class="font-syne text-3xl font-bold text-stone-900">Latest Photo Collections</h2>
+            </div>
+            <a href="https://python-tray-wrench.ngrok-free.dev/albums" class="inline-flex items-center gap-1.5 text-xs font-bold text-stone-950 hover:text-amber-700 uppercase tracking-widest group">
+                View All Albums <i data-lucide="arrow-right" class="w-4 h-4 group-hover:translate-x-1 transition-transform"></i>
+            </a>
+        </div>
+
+                    <!-- Photo Grid -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                                    <div class="group relative overflow-hidden bg-stone-100 aspect-square border border-stone-200 shadow-sm rounded-lg">
+                        <img src="https://python-tray-wrench.ngrok-free.dev/storage/photos/2/6wOTmfc5QArnmQ3jsw4szukriChumOAKjiVyNQ4q.jpg" alt="Featured work" class="w-full h-full object-cover transition-all duration-700 ease-out group-hover:scale-102">
+                        <!-- Card Hover Overlay -->
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-6">
+                            <div>
+                                <span class="text-[10px] text-amber-400 font-bold uppercase tracking-wider">Album: alex</span>
+                                <h4 class="text-white font-syne font-bold text-sm mt-1">Captured Frame</h4>
+                            </div>
+                        </div>
+                    </div>
+                                    <div class="group relative overflow-hidden bg-stone-100 aspect-square border border-stone-200 shadow-sm rounded-lg">
+                        <img src="https://python-tray-wrench.ngrok-free.dev/storage/photos/2/avbC4F3MHMxJc1wbQ9ItXoLnRT4smZBZeXjc9FSb.png" alt="Featured work" class="w-full h-full object-cover transition-all duration-700 ease-out group-hover:scale-102">
+                        <!-- Card Hover Overlay -->
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-6">
+                            <div>
+                                <span class="text-[10px] text-amber-400 font-bold uppercase tracking-wider">Album: alex</span>
+                                <h4 class="text-white font-syne font-bold text-sm mt-1">Captured Frame</h4>
+                            </div>
+                        </div>
+                    </div>
+                                    <div class="group relative overflow-hidden bg-stone-100 aspect-square border border-stone-200 shadow-sm rounded-lg">
+                        <img src="https://python-tray-wrench.ngrok-free.dev/storage/photos/2/Pea6zzsm7BermG34nhdFEaNMeNCG76PMJSJga7FU.png" alt="Featured work" class="w-full h-full object-cover transition-all duration-700 ease-out group-hover:scale-102">
+                        <!-- Card Hover Overlay -->
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-6">
+                            <div>
+                                <span class="text-[10px] text-amber-400 font-bold uppercase tracking-wider">Album: alex</span>
+                                <h4 class="text-white font-syne font-bold text-sm mt-1">Captured Frame</h4>
+                            </div>
+                        </div>
+                    </div>
+                                    <div class="group relative overflow-hidden bg-stone-100 aspect-square border border-stone-200 shadow-sm rounded-lg">
+                        <img src="https://python-tray-wrench.ngrok-free.dev/storage/photos/2/vt26HGpWPaqaXoCDtrLFQS3WxG3CjZDthi9ytRKd.png" alt="Featured work" class="w-full h-full object-cover transition-all duration-700 ease-out group-hover:scale-102">
+                        <!-- Card Hover Overlay -->
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-6">
+                            <div>
+                                <span class="text-[10px] text-amber-400 font-bold uppercase tracking-wider">Album: alex</span>
+                                <h4 class="text-white font-syne font-bold text-sm mt-1">Captured Frame</h4>
+                            </div>
+                        </div>
+                    </div>
+                                    <div class="group relative overflow-hidden bg-stone-100 aspect-square border border-stone-200 shadow-sm rounded-lg">
+                        <img src="https://python-tray-wrench.ngrok-free.dev/storage/photos/2/ZD1jClkJdcx4IzaTYGA4t3gFX50mSIE1PeHY4evx.png" alt="Featured work" class="w-full h-full object-cover transition-all duration-700 ease-out group-hover:scale-102">
+                        <!-- Card Hover Overlay -->
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-6">
+                            <div>
+                                <span class="text-[10px] text-amber-400 font-bold uppercase tracking-wider">Album: alex</span>
+                                <h4 class="text-white font-syne font-bold text-sm mt-1">Captured Frame</h4>
+                            </div>
+                        </div>
+                    </div>
+                                    <div class="group relative overflow-hidden bg-stone-100 aspect-square border border-stone-200 shadow-sm rounded-lg">
+                        <img src="https://python-tray-wrench.ngrok-free.dev/storage/photos/1/BMUXraMY0HPcAegmJ0PN7VB03AgYOGiUsjGVTk3a.png" alt="Featured work" class="w-full h-full object-cover transition-all duration-700 ease-out group-hover:scale-102">
+                        <!-- Card Hover Overlay -->
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-6">
+                            <div>
+                                <span class="text-[10px] text-amber-400 font-bold uppercase tracking-wider">Album: cairo</span>
+                                <h4 class="text-white font-syne font-bold text-sm mt-1">Captured Frame</h4>
+                            </div>
+                        </div>
+                    </div>
+                            </div>
+            </div>
+</section>
+
+<!-- Featured Videos Section -->
+<section class="py-24 bg-white border-t border-stone-200/60">
+    <div class="max-w-7xl mx-auto px-6 space-y-12">
+        <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4">
+            <div class="space-y-2">
+                <span class="text-xs font-bold text-amber-750 uppercase tracking-widest block">Moving Frames</span>
+                <h2 class="font-syne text-3xl font-bold text-stone-900">Cinematography Showcase</h2>
+            </div>
+            <a href="https://python-tray-wrench.ngrok-free.dev/media" class="inline-flex items-center gap-1.5 text-xs font-bold text-stone-950 hover:text-amber-700 uppercase tracking-widest group">
+                Explore Video Library <i data-lucide="arrow-right" class="w-4 h-4 group-hover:translate-x-1 transition-transform"></i>
+            </a>
+        </div>
+
+                    <!-- Video Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                                    <div class="group bg-stone-50 border border-stone-200 rounded-lg overflow-hidden shadow-sm flex flex-col justify-between hover:border-stone-300 transition-all duration-300 cursor-pointer"
+                         data-video-title="yout"
+                         data-video-url="https://www.youtube.com/watch?v=kQNdke9P-X0"
+                         data-video-file=""
+                         onclick="openVideoModal(this)">
+                        <div>
+                            <!-- Video Thumbnail Area -->
+                            <div class="relative h-48 bg-stone-100 flex items-center justify-center border-b border-stone-150">
+                                                                                                                                                <img src="https://img.youtube.com/vi/kQNdke9P-X0/mqdefault.jpg" alt="YouTube Video" class="w-full h-full object-cover">
+                                                                                                    <div class="absolute inset-0 bg-stone-950/20 flex items-center justify-center">
+                                    <i data-lucide="play" class="w-12 h-12 text-white opacity-90 group-hover:scale-110 transition-transform"></i>
+                                </div>
+                            </div>
+                            
+                            <!-- Content -->
+                            <div class="p-5">
+                                <h3 class="font-bold text-sm text-stone-900 leading-snug group-hover:text-amber-700 transition-colors">yout</h3>
+                            </div>
+                        </div>
+                    </div>
+                                    <div class="group bg-stone-50 border border-stone-200 rounded-lg overflow-hidden shadow-sm flex flex-col justify-between hover:border-stone-300 transition-all duration-300 cursor-pointer"
+                         data-video-title="vid1"
+                         data-video-url=""
+                         data-video-file="https://python-tray-wrench.ngrok-free.dev/storage/videos/gtOVkf4npOasQzq2z3n0IpBc7pPkAyqFCPveG2Xr.mp4"
+                         onclick="openVideoModal(this)">
+                        <div>
+                            <!-- Video Thumbnail Area -->
+                            <div class="relative h-48 bg-stone-100 flex items-center justify-center border-b border-stone-150">
+                                                                    <video src="https://python-tray-wrench.ngrok-free.dev/storage/videos/gtOVkf4npOasQzq2z3n0IpBc7pPkAyqFCPveG2Xr.mp4" preload="metadata" class="w-full h-full object-cover video-preview" muted playsinline></video>
+                                                                <div class="absolute inset-0 bg-stone-950/20 flex items-center justify-center">
+                                    <i data-lucide="play" class="w-12 h-12 text-white opacity-90 group-hover:scale-110 transition-transform"></i>
+                                </div>
+                            </div>
+                            
+                            <!-- Content -->
+                            <div class="p-5">
+                                <h3 class="font-bold text-sm text-stone-900 leading-snug group-hover:text-amber-700 transition-colors">vid1</h3>
+                            </div>
+                        </div>
+                    </div>
+                            </div>
+            </div>
+</section>
+
+<!-- Video Player Modal -->
+<div id="video-modal" class="fixed inset-0 z-50 bg-white/98 backdrop-blur-md hidden flex-col items-center justify-center" role="dialog" aria-modal="true">
+    <!-- Header -->
+    <div class="absolute top-0 inset-x-0 h-20 px-6 flex items-center justify-between border-b border-stone-150/60 bg-white">
+        <h4 id="video-modal-title" class="font-syne text-sm font-bold text-stone-900 tracking-wide uppercase">Video Title</h4>
+        <button onclick="closeVideoModal()" class="p-3 text-stone-600 hover:text-stone-950 hover:bg-stone-50 rounded-full transition-colors">
+            <i data-lucide="x" class="w-6 h-6"></i>
+        </button>
+    </div>
+
+    <!-- Video Element Wrapper -->
+    <div class="w-full max-w-4xl px-4 aspect-video flex items-center justify-center">
+        <!-- YouTube IFrame Player -->
+        <iframe id="modal-youtube-player" class="w-full h-full rounded border border-stone-200 shadow-lg hidden"
+                src=""
+                title="YouTube Video Player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+
+        <!-- HTML5 Video Player -->
+        <video id="modal-html5-player" class="w-full max-h-full rounded border border-stone-200 shadow-lg hidden" controls>
+            <source src="" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+</div>
+    </main>
+
+    <!-- Elegant Footer -->
+    <footer class="bg-stone-900 text-stone-300 pt-16 pb-8 mt-20 border-t border-stone-850">
+        <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
+            <!-- Col 1 -->
+            <div>
+                <a href="https://python-tray-wrench.ngrok-free.dev" class="font-syne text-2xl font-bold tracking-widest text-white uppercase">
+                    Abady<span class="text-amber-500">.</span>
+                </a>
+                <p class="mt-4 text-stone-400 text-sm leading-relaxed max-w-xs">
+                    Capturing timeless frames, organic lights, and deep authentic human expressions through fine-art storytelling.
+                </p>
+            </div>
+            <!-- Col 2 -->
+            <div>
+                <h3 class="font-syne text-xs uppercase tracking-wider text-white font-semibold mb-4">Quick Links</h3>
+                <div class="flex flex-col gap-2 text-sm">
+                    <a href="https://python-tray-wrench.ngrok-free.dev/albums" class="text-stone-400 hover:text-white transition-colors">Explore Albums</a>
+                    <a href="https://python-tray-wrench.ngrok-free.dev/media" class="text-stone-400 hover:text-white transition-colors">Cinema & Videos</a>
+                    <a href="https://python-tray-wrench.ngrok-free.dev/collaborations" class="text-stone-400 hover:text-white transition-colors">Brand Collaborations</a>
+                    <a href="https://python-tray-wrench.ngrok-free.dev/book" class="text-stone-400 hover:text-white transition-colors">Book Session</a>
+                    <a href="https://python-tray-wrench.ngrok-free.dev/bookings/lookup" class="text-stone-400 hover:text-white transition-colors">Manage Booking</a>
+                    <a href="https://python-tray-wrench.ngrok-free.dev/contact" class="text-stone-400 hover:text-white transition-colors">Inquire & Booking</a>
+                </div>
+            </div>
+            <!-- Col 3 -->
+            <div>
+                <h3 class="font-syne text-xs uppercase tracking-wider text-white font-semibold mb-4">Studio</h3>
+                <p class="text-stone-400 text-sm leading-relaxed mb-4">
+                    Cairo, Egypt & Worldwide Bookings<br>
+                    <a href="mailto:hello11@abady.com" class="text-stone-300 hover:text-white transition-colors">hello11@abady.com</a>
+                </p>
+                <!-- Social links (icons only) -->
+                <div class="flex items-center gap-4">
+                    <a href="#" class="text-stone-400 hover:text-amber-500 transition-colors" aria-label="Instagram">
+                        <i data-lucide="instagram" class="w-5 h-5"></i>
+                    </a>
+                    <a href="#" class="text-stone-400 hover:text-amber-500 transition-colors" aria-label="YouTube">
+                        <i data-lucide="youtube" class="w-5 h-5"></i>
+                    </a>
+                    <a href="#" class="text-stone-400 hover:text-amber-500 transition-colors" aria-label="Twitter/X">
+                        <i data-lucide="twitter" class="w-5 h-5"></i>
+                    </a>
+                    <a href="#" class="text-stone-400 hover:text-amber-500 transition-colors" aria-label="Vimeo">
+                        <i data-lucide="video" class="w-5 h-5"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-6 pt-8 border-t border-stone-800 flex flex-col sm:flex-row items-center justify-between text-xs text-stone-500 gap-4">
+            <p>&copy; 2026 Abady Photography. All rights reserved.</p>
+            <p class="tracking-wide">Designed & Engineered with premium quality</p>
+        </div>
+    </footer>
+
+    <!-- Initializations and Basic Scripts -->
+    <script>
+        // Initialize Lucide Icons
+        lucide.createIcons();
+
+        // Mobile Menu Toggle logic
+        const toggleBtn = document.getElementById('mobile-menu-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const menuIcon = document.getElementById('menu-icon');
+
+        toggleBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            mobileMenu.classList.toggle('flex');
+            
+            // Switch Icon
+            if (mobileMenu.classList.contains('hidden')) {
+                menuIcon.setAttribute('data-lucide', 'menu');
+            } else {
+                menuIcon.setAttribute('data-lucide', 'x');
+            }
+            lucide.createIcons();
+        });
+    </script>
+    <script>
+    function openVideoModal(card) {
+        const title = card.getAttribute('data-video-title');
+        const videoUrl = card.getAttribute('data-video-url');
+        const videoFile = card.getAttribute('data-video-file');
+
+        document.getElementById('video-modal-title').textContent = title;
+
+        const ytPlayer = document.getElementById('modal-youtube-player');
+        const h5Player = document.getElementById('modal-html5-player');
+
+        if (videoUrl) {
+            const regExp = /^.*(youtu.be\/|v\/|u\/\w\/|embed\/|watch\?v=|\&v=)([^#\&\?]*).*/;
+            const match = videoUrl.match(regExp);
+            const ytId = (match && match[2].length === 11) ? match[2] : null;
+
+            if (ytId) {
+                ytPlayer.src = `https://www.youtube.com/embed/${ytId}?autoplay=1`;
+                ytPlayer.classList.remove('hidden');
+                h5Player.classList.add('hidden');
+            }
+        } else if (videoFile) {
+            h5Player.src = videoFile;
+            h5Player.classList.remove('hidden');
+            ytPlayer.classList.add('hidden');
+            h5Player.play();
+        }
+
+        const modal = document.getElementById('video-modal');
+        modal.classList.remove('hidden');
+        modal.classList.add('flex');
+        document.body.style.overflow = 'hidden';
+    }
+
+    function closeVideoModal() {
+        const modal = document.getElementById('video-modal');
+        modal.classList.add('hidden');
+        modal.classList.remove('flex');
+        document.body.style.overflow = 'auto';
+
+        const ytPlayer = document.getElementById('modal-youtube-player');
+        const h5Player = document.getElementById('modal-html5-player');
+
+        ytPlayer.src = '';
+        h5Player.pause();
+        h5Player.src = '';
+    }
+
+    window.addEventListener('keydown', (e) => {
+        const modal = document.getElementById('video-modal');
+        if (!modal.classList.contains('hidden') && e.key === 'Escape') {
+            closeVideoModal();
+        }
+    });
+
+    // Hover play/pause video previews
+    document.querySelectorAll('.group').forEach(card => {
+        const video = card.querySelector('.video-preview');
+        if (video) {
+            card.addEventListener('mouseenter', () => {
+                video.play().catch(e => console.log("Preview autoplay blocked or interrupted:", e));
+            });
+            card.addEventListener('mouseleave', () => {
+                video.pause();
+                video.currentTime = 0;
+            });
+        }
+    });
+</script>
+</body>
+</html>
