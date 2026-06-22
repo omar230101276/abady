@@ -27,6 +27,7 @@ class AdminProfileTest extends TestCase
         Setting::set('bio_intro', 'Original Bio Intro');
         Setting::set('bio_description', 'Original Bio Description');
         Setting::set('contact_email', 'hello@abady.com');
+        Setting::set('contact_location', 'Cairo, Egypt');
     }
 
     public function test_unauthenticated_user_cannot_access_profile_page(): void
@@ -42,6 +43,7 @@ class AdminProfileTest extends TestCase
         $response->assertStatus(200);
         $response->assertSee('Profile Settings');
         $response->assertSee('hello@abady.com');
+        $response->assertSee('Cairo, Egypt');
         $response->assertSee('Original Bio Title');
     }
 
@@ -56,6 +58,7 @@ class AdminProfileTest extends TestCase
                 'bio_intro' => 'New Bio Intro',
                 'bio_description' => 'New Bio Description',
                 'contact_email' => 'newcontact@abady.com',
+                'contact_location' => 'New York, USA',
                 'social_instagram' => 'https://instagram.com/newuser',
             ]);
 
@@ -70,6 +73,7 @@ class AdminProfileTest extends TestCase
         // Check settings updated
         $this->assertEquals('New Bio Title', Setting::get('bio_title'));
         $this->assertEquals('newcontact@abady.com', Setting::get('contact_email'));
+        $this->assertEquals('New York, USA', Setting::get('contact_location'));
         $this->assertEquals('https://instagram.com/newuser', Setting::get('social_instagram'));
     }
 
@@ -84,6 +88,7 @@ class AdminProfileTest extends TestCase
                 'bio_intro' => 'New Bio Intro',
                 'bio_description' => 'New Bio Description',
                 'contact_email' => 'invalid-contact-email',
+                'contact_location' => 'New York, USA',
             ]);
 
         $response->assertRedirect(route('admin.profile'));

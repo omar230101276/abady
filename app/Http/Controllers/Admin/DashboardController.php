@@ -25,10 +25,9 @@ class DashboardController extends Controller
             'pending_bookings' => Booking::whereIn('status', ['pending', 'verification_pending'])->count(),
         ];
 
-        $latestContacts = Contact::latest()->take(5)->get();
-        $latestBookings = Booking::whereIn('status', ['pending', 'verification_pending'])
-            ->latest()
-            ->take(5)
+        $latestContacts = Contact::latest()->take(3)->get();
+        $latestBookings = Booking::latest()
+            ->take(3)
             ->get();
 
         return view('admin.dashboard', compact('stats', 'latestContacts', 'latestBookings'));

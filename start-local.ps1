@@ -14,7 +14,7 @@ Write-Host "=============================================" -ForegroundColor Gray
 $phpJob = Start-Process php -ArgumentList "artisan serve" -NoNewWindow -PassThru -ErrorAction SilentlyContinue
 
 # Start npm run dev (Vite) in the background
-$viteJob = Start-Process npm -ArgumentList "run dev" -NoNewWindow -PassThru -ErrorAction SilentlyContinue
+$viteJob = Start-Process npm.cmd -ArgumentList "run dev" -NoNewWindow -PassThru -ErrorAction SilentlyContinue
 
 Write-Host "Spinning up local server (port 8000) and Vite..." -ForegroundColor Yellow
 Start-Sleep -Seconds 3

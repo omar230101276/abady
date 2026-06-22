@@ -42,7 +42,7 @@
                     <div>
                         <span class="block text-xs font-bold uppercase text-stone-400 tracking-wider">Location</span>
                         <span class="text-sm font-semibold text-stone-900">
-                            Cairo, Egypt (Operating Globally)
+                            {{ \App\Models\Setting::get('contact_location', 'Cairo, Egypt') }} (Operating Globally)
                         </span>
                     </div>
                 </div>
@@ -101,8 +101,8 @@
 
                 <!-- Phone -->
                 <div>
-                    <label for="phone" class="block text-xs font-bold uppercase tracking-wider text-stone-700 mb-2">Phone Number (Optional)</label>
-                    <input type="text" id="phone" name="phone" value="{{ old('phone') }}"
+                    <label for="phone" class="block text-xs font-bold uppercase tracking-wider text-stone-700 mb-2">Phone Number</label>
+                    <input type="text" id="phone" name="phone" value="{{ old('phone') }}" required
                         class="w-full px-4 py-3 bg-stone-50 border border-stone-200 text-stone-900 rounded-lg text-sm focus:outline-none focus:border-stone-400 focus:bg-white transition-all @error('phone') border-rose-500 @enderror"
                         placeholder="e.g. +20 100 000 0000">
                     @error('phone')

@@ -93,6 +93,18 @@
                             <p class="text-rose-600 text-xs mt-1.5">{{ $message }}</p>
                         @enderror
                     </div>
+
+                    <!-- Contact Location -->
+                    <div>
+                        <label for="contact_location" class="block text-xs font-bold uppercase tracking-wider text-stone-705 mb-2">Public Website Location</label>
+                        <input type="text" id="contact_location" name="contact_location" value="{{ old('contact_location', $contactLocation) }}" required
+                            class="w-full px-3 py-2.5 bg-stone-50 border border-stone-200 text-stone-900 rounded-lg text-xs focus:outline-none focus:border-stone-400 focus:bg-white transition-all"
+                            placeholder="Cairo, Egypt">
+                        <p class="text-[10px] text-stone-405 mt-1.5 font-light leading-relaxed">This location is displayed publicly across all pages (footer, contact details).</p>
+                        @error('contact_location')
+                            <p class="text-rose-600 text-xs mt-1.5">{{ $message }}</p>
+                        @enderror
+                    </div>
                 </div>
             </div>
 

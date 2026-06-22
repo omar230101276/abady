@@ -35,8 +35,9 @@ class ProfileController extends Controller
         $socialTiktok = Setting::get('social_tiktok', '');
         
         $contactEmail = Setting::get('contact_email', 'hello@abady.com');
+        $contactLocation = Setting::get('contact_location', 'Cairo, Egypt');
 
-        return view('admin.profile.index', compact('user', 'bioTitle', 'bioIntro', 'bioDescription', 'bioImage', 'socialInstagram', 'socialYoutube', 'socialTiktok', 'contactEmail'));
+        return view('admin.profile.index', compact('user', 'bioTitle', 'bioIntro', 'bioDescription', 'bioImage', 'socialInstagram', 'socialYoutube', 'socialTiktok', 'contactEmail', 'contactLocation'));
     }
 
     /**
@@ -58,6 +59,7 @@ class ProfileController extends Controller
             'social_youtube' => 'nullable|url|max:255',
             'social_tiktok' => 'nullable|url|max:255',
             'contact_email' => 'required|email|max:255',
+            'contact_location' => 'required|string|max:255',
         ]);
 
         // Update login details
@@ -73,6 +75,7 @@ class ProfileController extends Controller
         Setting::set('bio_intro', $request->bio_intro);
         Setting::set('bio_description', $request->bio_description);
         Setting::set('contact_email', $request->contact_email);
+        Setting::set('contact_location', $request->contact_location);
         
         // Update social links
         Setting::set('social_instagram', $request->social_instagram ?? '');

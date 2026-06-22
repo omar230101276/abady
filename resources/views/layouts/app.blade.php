@@ -110,7 +110,7 @@
             <div>
                 <h3 class="font-syne text-xs uppercase tracking-wider text-white font-semibold mb-4">Studio</h3>
                 <p class="text-stone-400 text-sm leading-relaxed mb-4">
-                    Cairo, Egypt & Worldwide Bookings<br>
+                    {{ \App\Models\Setting::get('contact_location', 'Cairo, Egypt') }} & Worldwide Bookings<br>
                     <a href="mailto:{{ \App\Models\Setting::get('contact_email', 'hello@abady.com') }}" class="text-stone-300 hover:text-white transition-colors">{{ \App\Models\Setting::get('contact_email', 'hello@abady.com') }}</a>
                 </p>
                 <!-- Social links (icons only) -->
@@ -133,7 +133,7 @@
 
         <div class="max-w-7xl mx-auto px-6 pt-8 border-t border-stone-800 flex flex-col sm:flex-row items-center justify-between text-xs text-stone-500 gap-4">
             <p>&copy; {{ date('Y') }} Abady Photography. All rights reserved.</p>
-            <p class="tracking-wide">Designed & Engineered with premium quality</p>
+            <p class="tracking-wide">Designed & Engineered with Shams Abdullah</p>
         </div>
     </footer>
 
