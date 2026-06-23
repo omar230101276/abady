@@ -29,7 +29,7 @@ COPY --from=node-builder /app/public/build ./public/build
 ENV WEBROOT /var/www/html/public
 ENV SKIP_COMPOSER 1
 ENV PHP_ERRORS_STDERR 1
-ENV RUN_MIGRATIONS 0
+ENV RUN_MIGRATIONS true
 
 # Adjust folder permissions for storage and bootstrap cache
 RUN chown -R nginx:nginx /var/www/html/storage /var/www/html/bootstrap/cache
